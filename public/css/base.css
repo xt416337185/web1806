@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+}
+/* 第一个公共样式标题和前后得细线 */
+.basetitle{
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    color: #222;
+    font-weight: bold;
+}
+.basetitle::before{
+    content: "";
+    display: inline-block;
+    width: 43px;
+    height: 1px;
+    background: #ccc;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.basetitle::after{
+    content: "";
+    display: inline-block;
+    width: 43px;
+    height: 1px;
+    background: #ccc;
+    vertical-align: middle;
+    margin-left:20px;
+}
+/*列表项悬停图片样式*/
+.navlistwrap{
+    width: 1200px;
+    height: 128px;
+    margin: auto;
+}
+.navlist{
+    width: 1200px;
+    height: 87px;
+    border-bottom:1px solid #ccc;
+    margin-top:40px;
+    overflow: hidden;
+    display: flex;
+}
+.navlist a{
+    width: 11.11%;
+    float: left;
+    text-align: center;
+    flex:1;
+    text-decoration: none;
+}
+.navlist a img{
+    max-width: 28px;
+    height: 23px;
+    margin: 0 auto;
+}
+.navlist a .show{
+    display: block;
+}
+.navlist a .navcaption{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+}
